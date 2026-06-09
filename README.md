@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=0f001d&height=180&section=header&text=FR%20MEDIA%20PRODUCTION&fontSize=45&fontColor=ccff00&animation=twinkling" width="100%" alt="FR Media Production Header" />
+<H1>FR Media Production</H1>
 
   <p align="center">
     <strong>Creative Multimedia • Photography • Videography Services</strong>
@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-    <img src="https://img.shields.io/badge/UI%2UX-Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+    <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
   </p>
 
   <h4>
