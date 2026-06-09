@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FR Media Production - Dashboard Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">FR <span>Media Production</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#order">Order Project</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="serif-title">The Art of Visual <span>Storytelling.</span></h1>
+            <p>Kami mengubah ide dan konsep kreatif Anda menjadi karya multimedia yang memukau, elegan, dan futuristik.</p>
+            <a href="#order" class="btn btn-glow">Mulai Project Bersama</a>
+        </div>
+    </section>
+
+    <section class="stats-container">
+        <div class="stat-box">
+            <h3 class="stat-number">50+</h3>
+            <p>Project Selesai</p>
+        </div>
+        <div class="stat-box">
+            <h3 class="stat-number">12+</h3>
+            <p>Klien Instansi</p>
+        </div>
+        <div class="stat-box">
+            <h3 class="stat-number">99%</h3>
+            <p>Kepuasan Klien</p>
+        </div>
+    </section>
+
+    <div class="main-container">
+        
+        <section id="services" class="section-area">
+            <h2 class="section-title text-center">Our Creative Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon">🎬</div>
+                    <h3>Videografi</h3>
+                    <p>Produksi video sinematik, iklan commercial, dokumentasi event, hingga video pendek kreatif.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">📸</div>
+                    <h3>Fotografi</h3>
+                    <p>Pengambilan foto komersial, portrait produk, hingga *cinematic capture* dengan kualitas terbaik.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">✨</div>
+                    <h3>Video Editing</h3>
+                    <p>Proses pasca-produksi profesional dengan color grading kece.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Konten Edukatif</h3>
+                    <p>Desain infografis media sosial dan layout carousel interaktif yang informatif serta estetik.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-area">
+            <h2 class="section-title">Featured Showcase</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-img-placeholder design-vibe">
+                        <span class="tag">Graphic Design</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Cover Design Identity</h4>
+                        <p>Eksperimen visual dengan perpaduan neon gradasi dan tekstur grain gelap.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img-placeholder video-vibe">
+                        <span class="tag">Videography</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Cinematic Campuses Teaser</h4>
+                        <p>Produksi video promosi berdurasi pendek dengan tema masa depan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="section-area dashboard-grid">
+            
+            <div class="panel-box">
+                <h2 class="panel-title" id="form-title">Brief Project Baru</h2>
+                <form id="project-form">
+                    <input type="hidden" id="project-id">
+                    
+                    <div class="form-group">
+                        <label for="client-name">Nama Klien / Instansi</label>
+                        <input type="text" id="client-name" required placeholder="Siapa nama Anda?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Kategori Media</label>
+                        <select id="project-type" required>
+                            <option value="">-- Pilih Layanan --</option>
+                            <option value="Videografi">Videografi</option>
+                            <option value="Fotografi">Fotografi</option>
+                            <option value="Video Editing">Video Editing</option>
+                            <option value="Konten Edukatif">Konten Edukatif / Infografis</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-desc">Deskripsi & Konsep Kreatif</label>
+                        <textarea id="project-desc" rows="4" required placeholder="Jelaskan brief, mood, atau referensi style burung/minimalis yang diinginkan..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit" id="btn-submit">Kirim Ke Antrean</button>
+                    <button type="button" class="btn btn-cancel" id="btn-cancel" style="display:none;">Batal</button>
+                </form>
+            </div>
+
+            <div class="panel-box">
+                <h2 class="panel-title">Monitoring Antrean Project FR</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Klien</th>
+                                <th>Layanan</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="project-list">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; FR Media Production.</p>
+    </footer>
+
+    <script>
+        // Array database internal
+        let dataProjek = [
+            { id: 101, name: "Farid", type: "Videografi", desc: "Short cinematic teaser event kampus." },
+            { id: 102, name: "Zahid", type: "Video Editing", desc: "Editing konten Reels Instagram durasi 1 menit." }
+        ];
+
+        const projectForm = document.getElementById('project-form');
+        const projectIdInput = document.getElementById('project-id');
+        const clientNameInput = document.getElementById('client-name');
+        const projectTypeInput = document.getElementById('project-type');
+        const projectDescInput = document.getElementById('project-desc');
+        
+        const formTitle = document.getElementById('form-title');
+        const btnSubmit = document.getElementById('btn-submit');
+        const btnCancel = document.getElementById('btn-cancel');
+        const projectListTable = document.getElementById('project-list');
+
+        // 1. READ / RENDER DATA (Manual Loop)
+        function renderProjek() {
+            projectListTable.innerHTML = "";
+
+            if (dataProjek.length === 0) {
+                projectListTable.innerHTML = `<tr><td colspan="4" class="text-center" style="color: #b39ddb; font-style: italic; padding: 20px;">Belum ada pesanan masuk.</td></tr>`;
+                return;
+            }
+
+            for (let i = 0; i < dataProjek.length; i++) {
+                let p = dataProjek[i];
+                let no = i + 1;
+                let row = document.createElement('tr');
+
+                row.innerHTML = `
+                    <td>${no}</td>
+                    <td><strong>${p.name}</strong><br><small style="color:#b39ddb; font-size:0.75rem;">${p.desc.substring(0,25)}...</small></td>
+                    <td><span class="badge">${p.type}</span></td>
+                    <td>
+                        <button class="btn-action btn-edit" onclick="siapkanEdit(${p.id})">⚙️</button>
+                        <button class="btn-action btn-delete" onclick="hapusProjek(${p.id})">🗑️</button>
+                    </td>
+                `;
+                projectListTable.appendChild(row);
+            }
+        }
+
+        // 2. CREATE & UPDATE
+        projectForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let id = projectIdInput.value;
+            let name = clientNameInput.value;
+            let type = projectTypeInput.value;
+            let desc = projectDescInput.value;
+
+            if (id === "") {
+                // Create mode
+                let dataBaru = { id: Date.now(), name: name, type: type, desc: desc };
+                dataProjek.push(dataBaru);
+            } else {
+                // Update mode lewat loop manual
+                for (let i = 0; i < dataProjek.length; i++) {
+                    if (dataProjek[i].id == id) {
+                        dataProjek[i].name = name;
+                        dataProjek[i].type = type;
+                        dataProjek[i].desc = desc;
+                        break;
+                    }
+                }
+                clearForm();
+            }
+
+            renderProjek();
+            projectForm.reset();
+        });
+
+        // 3. EDIT TRIGGER
+        function siapkanEdit(id) {
+            let target = null;
+            for (let i = 0; i < dataProjek.length; i++) {
+                if (dataProjek[i].id == id) {
+                    target = dataProjek[i];
+                    break;
+                }
+            }
+
+            if (target != null) {
+                projectIdInput.value = target.id;
+                clientNameInput.value = target.name;
+                projectTypeInput.value = target.type;
+                projectDescInput.value = target.desc;
+
+                formTitle.innerHTML = "Edit Detail Brief <span>⚙️</span>";
+                btnSubmit.innerText = "Perbarui Brief";
+                btnCancel.style.display = "inline-block";
+            }
+        }
+
+        // 4. DELETE (Loop Manual & Splice)
+        function hapusProjek(id) {
+            if (confirm("Hapus antrean project ini?")) {
+                for (let i = 0; i < dataProjek.length; i++) {
+                    if (dataProjek[i].id == id) {
+                        dataProjek.splice(i, 1);
+                        break;
+                    }
+                }
+                renderProjek();
+                clearForm();
+            }
+        }
+
+        function clearForm() {
+            projectIdInput.value = "";
+            projectForm.reset();
+            formTitle.innerText = "Brief Project Baru";
+            btnSubmit.innerText = "Kirim Ke Antrean";
+            btnCancel.style.display = "none";
+        }
+
+        btnCancel.addEventListener('click', clearForm);
+        renderProjek();
+    </script>
+</body>
+</html>
